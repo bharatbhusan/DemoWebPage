@@ -36,8 +36,8 @@
 				<version>2.2</version>
 				<configuration>
 					<url>http://localhost:8081/manager/text</url>
-					<username>bob</username>
-     				<password>whatever</password>
+					<username>bharat</username>
+     				<password>tuku_</password>
 					<path>/DemoWebPage</path>
 					<port>8081</port>
 				</configuration>
