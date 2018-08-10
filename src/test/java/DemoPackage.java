@@ -15,7 +15,7 @@ public class DemoPackage
 		driver.get("http://localhost:8081/DemoWebPage/");
 		String bgcolor[]=driver.findElement(By.xpath(".//body")).getAttribute("style").toString().split(":");
 		String color=bgcolor[1].trim().substring(0, bgcolor[1].length()-2);
-		System.out.println("Actual Color"+color);
+		System.out.println("Actual Colour"+color);
 		Assert.assertEquals("Actual Color is not blue", "blue", color);
 		driver.quit();
 	}
