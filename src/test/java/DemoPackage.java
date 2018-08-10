@@ -16,7 +16,7 @@ public class DemoPackage
 		String bgcolor[]=driver.findElement(By.xpath(".//body")).getAttribute("style").toString().split(":");
 		String color=bgcolor[1].trim().substring(0, bgcolor[1].length()-2);
 		System.out.println(color);
-		Assert.assertEquals("Color is not blue", "purple", color);
+		Assert.assertEquals("Color is not blue", "blue", color);
 		driver.quit();
 	}
 }
