@@ -53,6 +53,23 @@
 					<port>8081</port>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<!-- This is to skip tests during normal maven execution (e.g. mvn package) 
+						and run them in integration-test -->
+				<!--	<skipTests>true</skipTests> 
+				commented to execute test case from server using like 
+				pom.xml clean install test -DsuiteXmlFile=testng\ReportingWirelessSalesRegression_Desktop.xml-->
+					<suiteXmlFiles>
+					<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					
+					<rerunFailingTestsCount>2</rerunFailingTestsCount>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
