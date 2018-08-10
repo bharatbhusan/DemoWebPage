@@ -1,12 +1,14 @@
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-class Test1
+import org.testng.Assert;
+import org.testng.annotations.Test;
+public class DemoPackage
 {
 	private static WebDriver driver;
-	public static void main(String args[])
+	
+	@Test
+	public void checkBGColor()
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		driver=new ChromeDriver();	
